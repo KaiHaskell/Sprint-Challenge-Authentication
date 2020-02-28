@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card-width {
+  width: 300px;
+  padding: 10px;
+}
+
+.joke-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}

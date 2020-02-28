@@ -35,7 +35,7 @@ const Login = props => {
     AxiosWithAuth()
       .post("/auth/login", user)
       .then(res => {
-        console.log(res.data.payload);
+        console.log(res.data);
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("id", res.data.id);
         localStorage.setItem("username", res.data.username);
