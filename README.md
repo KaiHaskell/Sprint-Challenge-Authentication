@@ -39,19 +39,23 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
+      To store data prevalent to the current users session, such as their session id or username.
 
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+      It hashes the users password.
 
 - [ ] What does bcrypt do to slow down attackers?
+      Decrypters will need the secret in order to dehash the password.
 
 - [ ] What are the three parts of the JSON Web Token?
+      The headers, payload, and signature.
 
 ## Minimum Viable Product
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
 
-- [ ] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
-- [ ] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
+- [✅] Implement the `register` and `login` functionality inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
+- [✅] Implement the `authenticate` middleware inside `/auth/authenticate-middleware.js`.
 - [ ] Write a **minimum o 2 tests** per API endpoint. Write more tests if you have time.
 
 **Note**: the database already has the users table, but if you run into issues, the migrations are available.
